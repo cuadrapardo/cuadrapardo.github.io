@@ -96,7 +96,7 @@ export default defineConfig({
 	prefetch: true,
 	// ! Please remember to replace the following site property with your own domain
 	site: "https://cuadrapardo.github.io",
-  base: "/cuadrapardo.github.io/", //Base path for deployment
+  base: "/", //Base path for deployment
 	vite: {
 		optimizeDeps: {
 			exclude: ["@resvg/resvg-js"],
