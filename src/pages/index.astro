@@ -9,54 +9,36 @@ const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 const cactusTech: { desc: string; href: string; title: string }[] = [
-	{
-		desc: "Graphics",
-		href: "https://astro.build",
-		title: "Project 1",
+{
+		desc: "Implementation of MC algorithm for my MSc Project.",
+		href: "",
+		title: "Marching Cubes",
+	},
+{
+		desc: "Game Engine built as a group project",
+		href: "",
+		title: "Reina Engine",
 	},
 	{
-		desc: "More graphics!",
-		href: "https://tailwindcss.com",
-		title: "Project 2",
-	},
-	{
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
-		title: "Markdown",
-	},
-	{
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-		title: "MDX",
-	},
-	{
-		desc: "Generating png Open Graph images for blog posts.",
-		href: "https://github.com/vercel/satori",
-		title: "Satori",
-	},
-	{
-		desc: "A fully static search library.",
-		href: "https://pagefind.app/",
-		title: "Pagefind",
-	},
-	{
-		desc: "An easy to use Icon component for Astro.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
-		title: "Astro Icon",
-	},
-	{
-		desc: "Highly customisable source code & syntax highlighter",
-		href: "https://expressive-code.com/",
-		title: "Expressive Code",
+		desc: "With physically inspired shading, render-to-texture, postprocessing effects and shadow mapping",
+		href: "",
+		title: "Vulkan Renderer",
 	},
 ];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-6">Hello World!</h1>
+		<h1 class="title mb-6">Hello!</h1>
 		<p class="mb-4">
-			Hi. I'm currently migrating my old wesbite to this new theme. Sorry for the inconvenience.
+			I'm Carolina Cuadra Pardo, a recent graduate from the University of Leeds MSc High Performance Graphics and Games Engineering. The projects I have carried out in my MSc, as well as my other personal projects, have honed my skills in understanding the development of key aspects of game engines, 
+understanding complex rendering techniques, and implementing mesh processing algorithms. Notable projects include creating the Reina Engine, a game engine built from scratch in C++, in which I was mostly responsible for the animation and collision detection systems; developing a renderer using Vulkan with physically inspired shading models,
+as well as my MSc Thesis – an implementation of a surface reconstruction from point cloud pipeline, inclduing Marching Cubes with an interactive UI, and a mesh simplification step.<br>
+I have experience with key tools such as RenderDoc, and graphics APIs – Vulkan and OpenGL. I take pride in being a good problem solver which tackles problems systematically, especially considering debug outputs and test modes which are so important in rendering and graphics.
+Besides videogames, I am very interested in the latest graphics techniques and keep up to date with the current research (SIGGRAPH, Eurographics, GDC, REAC). I am always on the look for new techniques to test and implement.<br>
+
+
+     I am in the process of building this site so some sections might be empty. Sorry for the inconvenience.
 		</p>
 		<SocialList />
 	</section>
